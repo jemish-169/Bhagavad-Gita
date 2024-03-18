@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/bookmark_list_rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginVertical="5dp"
+        android:layoutAnimation="@anim/layout_animation_slide_from_bottom"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+    <ProgressBar
+        android:id="@+id/bookmark_progress_bar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:id="@+id/bookmark_ll_error"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/rv_item_home_tv_padding_horizontal16"
+        android:visibility="gone">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunitosans_semibold"
+            android:text="@string/error_msg"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/item_color_accent_border_ripple_background"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="10dp">
+
+            <TextView
+                android:id="@+id/bookmark_try_again"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nunitosans_bold"
+                android:text="@string/try_again"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="22sp" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/bookmark_tv_no_bookmarks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/nunitosans_semibold"
+        android:text="@string/no_bookmarks"
+        android:textColor="@color/black"
+        android:textSize="@dimen/rv_item_main_tv_text_size20"
+        android:visibility="gone" />
+</FrameLayout>

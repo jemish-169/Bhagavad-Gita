@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunitosans_bold"
+            android:text="@string/translation_source"
+            android:textColor="@color/black"
+            android:textSize="22sp" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/item_glass_effect"
+            android:orientation="horizontal"
+            android:padding="4dp">
+
+            <TextView
+                android:id="@+id/translation_writer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="30dp"
+                android:fontFamily="@font/nunitosans_semibold"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="end|center_vertical"
+                android:layout_marginEnd="4dp"
+                android:contentDescription="@null"
+                android:rotation="90"
+                app:srcCompat="@drawable/baseline_keyboard_arrow_right_24"
+                app:tint="@color/grey" />
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/nunitosans_bold"
+            android:text="@string/commentary_source"
+            android:textColor="@color/black"
+            android:textSize="22sp" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/item_glass_effect"
+            android:orientation="horizontal"
+            android:padding="4dp">
+
+            <TextView
+                android:id="@+id/commentary_writer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="30dp"
+                android:fontFamily="@font/nunitosans_semibold"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="end|center_vertical"
+                android:layout_marginEnd="4dp"
+                android:contentDescription="@null"
+                android:rotation="90"
+                app:srcCompat="@drawable/baseline_keyboard_arrow_right_24"
+                app:tint="@color/grey" />
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/grey" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/nunitosans_bold"
+            android:text="@string/app_info"
+            android:textColor="@color/black"
+            android:textSize="22sp" />
+
+        <LinearLayout
+            android:id="@+id/settings_ll_share_app"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:foreground="?attr/selectableItemBackground"
+            android:orientation="horizontal"
+            android:padding="@dimen/verse_fl_padding10">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_share_24" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingHorizontal="@dimen/rv_item_home_tv_padding_horizontal16">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunitosans_regular"
+                    android:text="@string/share_gita_app"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/verse_tv_text_size18" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunitosans_light"
+                    android:text="@string/share_app_desc"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/settings_small_text14" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/settings_ll_privacy_policy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:foreground="?attr/selectableItemBackground"
+            android:orientation="horizontal"
+            android:padding="@dimen/verse_fl_padding10">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:contentDescription="@null"
+                android:src="@drawable/round_lock_24" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingHorizontal="@dimen/rv_item_home_tv_padding_horizontal16">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunitosans_regular"
+                    android:text="@string/privacy_policy_text"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/verse_tv_text_size18" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunitosans_light"
+                    android:text="@string/privacy_policy_desc"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/settings_small_text14" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/settings_ll_data_source"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:foreground="?attr/selectableItemBackground"
+            android:orientation="horizontal"
+            android:padding="@dimen/verse_fl_padding10">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_database" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingHorizontal="@dimen/rv_item_home_tv_padding_horizontal16">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunitosans_regular"
+                    android:text="@string/data_source"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/verse_tv_text_size18" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunitosans_light"
+                    android:text="@string/data_source_desc"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/settings_small_text14" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:padding="@dimen/verse_fl_padding10">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:contentDescription="@null"
+                android:src="@drawable/round_commit_24" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingHorizontal="@dimen/rv_item_home_tv_padding_horizontal16">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunitosans_regular"
+                    android:text="@string/version_number"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/verse_tv_text_size18" />
+
+                <TextView
+                    android:id="@+id/setting_version_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunitosans_light"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/settings_small_text14" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

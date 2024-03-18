@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/homeFragment">
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.practice.gita.fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_verseFragment"
+            app:destination="@id/verseFragment"
+            app:enterAnim="@anim/nav_slide_in_right"
+            app:popEnterAnim="@anim/nav_slide_in_left"/>
+    </fragment>
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="com.practice.gita.fragments.SettingFragment"
+        android:label="fragment_setting"
+        tools:layout="@layout/fragment_setting" />
+    <fragment
+        android:id="@+id/bookmarkFragment"
+        android:name="com.practice.gita.fragments.BookmarkFragment"
+        android:label="fragment_bookmark"
+        tools:layout="@layout/fragment_bookmark" >
+        <action
+            android:id="@+id/action_bookmarkFragment_to_verseFragment"
+            app:destination="@id/verseFragment"
+            app:enterAnim="@anim/nav_slide_in_right"
+            app:popEnterAnim="@anim/nav_slide_in_left"/>
+    </fragment>
+    <fragment
+        android:id="@+id/verseFragment"
+        android:name="com.practice.gita.fragments.VerseFragment"
+        android:label="fragment_verse"
+        tools:layout="@layout/fragment_verse" >
+        <action
+            android:id="@+id/action_verseFragment_to_shareFragment"
+            app:destination="@id/shareFragment"
+            app:enterAnim="@anim/nav_slide_in_right"
+            app:popEnterAnim="@anim/nav_slide_in_left"/>
+    </fragment>
+    <fragment
+        android:id="@+id/summaryFragment"
+        android:name="com.practice.gita.fragments.SummaryFragment"
+        android:label="fragment_summary"
+        tools:layout="@layout/fragment_summary" />
+    <fragment
+        android:id="@+id/shareFragment"
+        android:name="com.practice.gita.fragments.ShareFragment"
+        android:label="fragment_share"
+        tools:layout="@layout/fragment_share" />
+</navigation>

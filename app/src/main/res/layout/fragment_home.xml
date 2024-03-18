@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/last_read_cv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="10dp"
+        android:foreground="?attr/selectableItemBackground"
+        android:orientation="horizontal"
+        android:paddingVertical="4dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/last_read_item_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:fontFamily="@font/nunitosans_bold"
+                android:paddingHorizontal="16dp"
+                android:textColor="@color/chapter_num"
+                android:textSize="18sp" />
+
+
+            <TextView
+                android:id="@+id/last_read_item_verse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginVertical="10dp"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/nunitosans_semibold"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="@dimen/rv_item_icon_width30"
+            android:layout_height="match_parent"
+            android:contentDescription="@null"
+            android:src="@drawable/baseline_keyboard_arrow_right_24" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/home_last_read_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginHorizontal="16dp"
+        android:background="@color/dark_saffron" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/home_list_rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="8dp"
+        android:layoutAnimation="@anim/layout_animation_slide_from_bottom"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+    <ProgressBar
+        android:id="@+id/home_progress_bar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:id="@+id/home_ll_error"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/rv_item_home_tv_padding_horizontal16"
+        android:visibility="gone">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunitosans_semibold"
+            android:text="@string/error_msg"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/item_color_accent_border_ripple_background"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="10dp">
+
+            <TextView
+                android:id="@+id/home_try_again"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nunitosans_bold"
+                android:text="@string/try_again"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="22sp" />
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

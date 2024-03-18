@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Bhagavad Gita</string>
+    <string name="translation_source">Translation By</string>
+    <string name="commentary_source">Commentary By</string>
+    <string name="verses">verses</string>
+    <string name="transliteration">TRANSLITERATION</string>
+    <string name="translation">TRANSLATION</string>
+    <string name="translation_text">Translation text here.</string>
+    <string name="commentary">COMMENTARY</string>
+    <string name="word_meaning">WORD MEANING</string>
+    <string name="error_msg"> Unable to establish a connection.\nPlease check your internet connection and try again.</string>
+    <string name="try_again">Try Again</string>
+    <string name="summary">Summary</string>
+    <string name="no_bookmarks">No Bookmarks</string>
+    <string name="verse_meaning">Verse Meaning</string>
+    <string name="privacy_policy_link">https://sites.google.com/view/bhagavad-gita-app-privacy/</string>
+    <string name="privacy_policy_text">Privacy Policy</string>
+    <string name="writer_name_in_language">%1$s %2$s by %3$s</string>
+    <string name="share_a_verse">Share Verse</string>
+    <string name="app_info">App Information</string>
+     <string name="share_gita_app">Share Bhagavad Gita App</string>
+    <string name="version_number">Version Number</string>
+    <string name="share_app_desc">Share App with your friends and family</string>
+    <string name="privacy_policy_desc">Read Bhagavad Gita App\'s privacy policy</string>
+    <string name="share_app_text">\"Hey! 🌟 Found this awesome Bhagavad Gita app that\'s been enlightening my days. Sharing the love – check it out!\nhttps://play.google.com/store/apps/details?id=%1$s</string>
+    <string name="chapter_verse">Chapter %1$s - Verse %2$s</string>
+    <string name="last_read">Last Read: %1$s.%2$s</string>
+    <string name="close">Close</string>
+    <string name="data_source_desc">Bhagavad Gita App\'s Data source</string>
+    <string name="data_source">Data source</string>
+    <string name="data_source_link">https://bhagavadgita.io/</string>
+</resources>

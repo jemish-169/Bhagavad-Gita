@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/rv_item_main_tv_margin_horizontal16"
+    android:layout_marginTop="10dp"
+    android:foreground="?attr/selectableItemBackground"
+    app:cardCornerRadius="@dimen/card_corner_radius3">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/item_glass_effect"
+        android:orientation="vertical"
+        android:paddingVertical="12dp">
+
+        <TextView
+            android:id="@+id/bookmark_item_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="16dp"
+            android:background="@drawable/item_circular_color_accent_border"
+            android:fontFamily="@font/nunitosans_bold"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="2dp"
+            android:textColor="@color/chapter_num"
+            android:textSize="22sp" />
+
+
+        <TextView
+            android:id="@+id/bookmark_item_verse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginVertical="10dp"
+            android:fontFamily="@font/nunitosans_semibold"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/share_app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <ImageView
+            android:id="@+id/share_back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:contentDescription="@null"
+            android:foreground="?attr/selectableItemBackground"
+            android:paddingHorizontal="@dimen/spinner_item_padding_vertical8"
+            android:src="@drawable/round_arrow_back_24" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/nunitosans_bold"
+            android:gravity="center_vertical"
+            android:text="@string/share_a_verse"
+            android:textColor="@color/black"
+            android:textSize="@dimen/verse_tv_text_size18" />
+
+        <ImageView
+            android:id="@+id/share_verse_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:contentDescription="@null"
+            android:foreground="?attr/selectableItemBackground"
+            android:paddingHorizontal="@dimen/rv_item_home_tv_padding_horizontal16"
+            android:src="@drawable/ic_right_24" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/share_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/rv_item_main_tv_margin_horizontal16"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingVertical="@dimen/verse_ll_padding_vertical20">
+
+            <LinearLayout
+                android:id="@+id/share_ll_image"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:background="#eecca4"
+                android:padding="24dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/share_layout_rounded_border"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="4dp"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="wrap_content"
+                            android:layout_height="1dp"
+                            android:layout_weight="1"
+                            android:background="#101010" />
+
+                        <TextView
+                            android:id="@+id/share_verse_slug"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/nunitosans_bold"
+                            android:paddingHorizontal="6dp"
+                            android:textColor="#101010"
+                            android:textSize="20sp" />
+
+                        <View
+                            android:layout_width="wrap_content"
+                            android:layout_height="1dp"
+                            android:layout_weight="1"
+                            android:background="#101010" />
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/share_verseText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginVertical="36dp"
+                        android:fontFamily="@font/nunitosans_semibold"
+                        android:paddingHorizontal="4dp"
+                        android:textAlignment="center"
+                        android:textColor="#cc5f25"
+                        android:textSize="@dimen/verse_tv_text_size18" />
+
+                    <TextView
+                        android:id="@+id/share_iamge_app_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center"
+                        android:layout_marginHorizontal="24dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/share_layout_app_name_background"
+                        android:fontFamily="@font/nunitosans_extrabold"
+                        android:paddingVertical="15dp"
+                        android:text="@string/app_name"
+                        android:textAlignment="center"
+                        android:textAllCaps="true"
+                        android:textColor="#101010"
+                        android:textSize="@dimen/rv_item_tv_text_size16" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/share_color_recycler_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/verse_tv_margin_top20"
+                android:orientation="horizontal"
+                android:paddingVertical="5dp"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

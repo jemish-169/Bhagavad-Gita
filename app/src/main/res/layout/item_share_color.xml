@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/item_view_to_set_back"
+        android:layout_width="35dp"
+        android:foreground="?attr/selectableItemBackground"
+        android:layout_height="35dp"
+        android:layout_marginHorizontal="8dp"
+        android:background="@drawable/round_item_share_color_background" />
+
+    <View
+        android:id="@+id/selected_color_underline"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginVertical="4dp"
+        android:visibility="invisible"
+        android:background="@color/black" />
+</LinearLayout>

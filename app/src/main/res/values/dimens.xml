@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="rv_item_horizontal_margin12">12dp</dimen>
+    <dimen name="rv_item_top_margin10">10dp</dimen>
+    <dimen name="rv_item_ll_vertical_padding12">12dp</dimen>
+    <dimen name="rv_item_main_tv_margin_horizontal16">16dp</dimen>
+    <dimen name="rv_item_main_tv_text_size20">20sp</dimen>
+    <dimen name="rv_item_tv_text_size16">16sp</dimen>
+    <dimen name="spinner_item_padding_vertical8">8dp</dimen>
+    <dimen name="rv_item_home_tv_margin_horizontal8">8dp</dimen>
+    <dimen name="rv_item_home_tv_padding_horizontal16">16dp</dimen>
+    <dimen name="rv_item_home_tv_padding_vertical2">2dp</dimen>
+    <dimen name="rv_item_home_tv_text_size22">22sp</dimen>
+    <dimen name="rv_item_home_ll_margin_start10">10dp</dimen>
+    <dimen name="rv_item_main_tv_margin_end8">8dp</dimen>
+    <dimen name="rv_item_home_tv_margin_bottom5">5dp</dimen>
+    <dimen name="rv_item_icon_width30">30dp</dimen>
+    <dimen name="verse_ll_padding_vertical20">20dp</dimen>
+    <dimen name="verse_tv_margin_top30">30dp</dimen>
+    <dimen name="verse_tv_text_size18">18sp</dimen>
+    <dimen name="verse_iv_height20">20dp</dimen>
+    <dimen name="verse_tv_margin_top20">20dp</dimen>
+    <dimen name="ctrl_btn_height65">65dp</dimen>
+    <dimen name="verse_fl_margin8">8dp</dimen>
+    <dimen name="verse_fl_padding10">10dp</dimen>
+    <dimen name="card_corner_radius3">3dp</dimen>
+    <dimen name="verse_tran_com_source4">4dp</dimen>
+    <dimen name="settings_small_text14">14sp</dimen>
+</resources>

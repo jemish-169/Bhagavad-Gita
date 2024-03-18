@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/rv_item_main_tv_margin_horizontal16"
+    android:layout_marginTop="@dimen/rv_item_top_margin10"
+    android:foreground="?attr/selectableItemBackground"
+    app:cardCornerRadius="@dimen/card_corner_radius3">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/item_glass_effect"
+        android:orientation="vertical"
+        android:paddingVertical="@dimen/rv_item_ll_vertical_padding12">
+
+        <TextView
+            android:id="@+id/summary_chapter_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/rv_item_main_tv_margin_horizontal16"
+            android:fontFamily="@font/nunitosans_bold"
+            android:maxLines="1"
+            android:textColor="@color/dark_saffron"
+            android:textSize="@dimen/rv_item_main_tv_text_size20" />
+
+        <TextView
+            android:id="@+id/summary_chapter_summary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/rv_item_main_tv_margin_horizontal16"
+            android:layout_marginVertical="@dimen/rv_item_top_margin10"
+            android:ellipsize="end"
+            android:fontFamily="@font/nunitosans_semibold"
+            android:maxLines="2"
+            android:textColor="@color/black"
+            android:textSize="@dimen/rv_item_tv_text_size16" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

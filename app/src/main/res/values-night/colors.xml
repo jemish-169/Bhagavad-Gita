@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="dark_saffron">#eecca4</color>
+    <color name="medium_saffron">#cc5f25</color>
+    <color name="status_bar">#101010</color>
+    <color name="chapter_num">#EFEFEF</color>
+    <color name="black">#EFEFEF</color>
+    <color name="white">#101010</color>
+    <color name="grey">#AAAAAA</color>
+</resources>

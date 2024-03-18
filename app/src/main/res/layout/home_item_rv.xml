@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/rv_item_main_tv_margin_horizontal16"
+    android:layout_marginTop="@dimen/rv_item_top_margin10"
+    android:foreground="?attr/selectableItemBackground"
+    app:cardCornerRadius="@dimen/card_corner_radius3">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/item_glass_effect"
+        android:orientation="horizontal"
+        android:paddingVertical="12dp">
+
+        <TextView
+            android:id="@+id/home_chapter_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="@dimen/rv_item_home_tv_margin_horizontal8"
+            android:background="@drawable/item_circular_color_accent_border"
+            android:fontFamily="@font/nunitosans_bold"
+            android:paddingHorizontal="@dimen/rv_item_home_tv_padding_horizontal16"
+            android:paddingVertical="@dimen/rv_item_home_tv_padding_vertical2"
+            android:textColor="@color/chapter_num"
+            android:textSize="@dimen/rv_item_home_tv_text_size22" />
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/rv_item_home_ll_margin_start10"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/home_chapter_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/rv_item_main_tv_margin_end8"
+                android:layout_marginBottom="@dimen/rv_item_main_tv_margin_end8"
+                android:fontFamily="@font/nunitosans_bold"
+                android:maxLines="1"
+                android:textColor="@color/dark_saffron"
+                android:textSize="@dimen/rv_item_main_tv_text_size20" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/home_verse_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/rv_item_home_ll_margin_start10"
+                    android:layout_marginBottom="@dimen/rv_item_home_tv_margin_bottom5"
+                    android:fontFamily="@font/nunitosans_semibold"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/rv_item_tv_text_size16" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/rv_item_home_ll_margin_start10"
+                    android:layout_marginBottom="@dimen/rv_item_home_tv_margin_bottom5"
+                    android:fontFamily="@font/nunitosans_semibold"
+                    android:text="@string/verses"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/rv_item_tv_text_size16" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="@dimen/rv_item_icon_width30"
+            android:layout_height="match_parent"
+            android:contentDescription="@null"
+            android:src="@drawable/baseline_keyboard_arrow_right_24" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
